@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: #f7f5f2;
+    color: #2c2c2c;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.site-header {
+    background: #ffffff;
+    padding: 42px 0 24px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #2f2a26;
+}
+
+.site-header p {
+    margin-top: 10px;
+    color: #666;
+    font-size: 1rem;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #8c7b6d;
+}
+
+main {
+    padding: 36px 0;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 28px;
+    margin-bottom: 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h2, .card h3 {
+    margin-top: 0;
+    color: #3b342f;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.evidence-box {
+    background: #f9f7f4;
+    border-left: 4px solid #b7a99a;
+    padding: 14px 16px;
+    margin-top: 16px;
+    border-radius: 8px;
+}
+
+.note {
+    color: #666;
+    font-size: 0.96rem;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px 0 35px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.page-intro {
+    font-size: 1.03rem;
+}
+
+.highlight {
+    color: #5f5348;
+    font-weight: 600;
+}
