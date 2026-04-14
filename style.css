@@ -103,3 +103,7 @@ main {
     color: #5f5348;
     font-weight: 600;
 }
+
+.card strong {
+    color: #4d433b;
+}
