@@ -33,27 +33,43 @@
 <section class="card">
 <h2>Overview</h2>
 <p class="page-intro">
-This section presents practical machine learning activities completed throughout the module.
-These activities demonstrate the progression from exploratory data analysis and regression,
-to clustering, neural networks, deep learning, and model evaluation.
+This section presents the practical machine learning activities completed throughout the module.
+These activities demonstrate my progression from foundational data analysis and statistical modelling
+to more advanced machine learning techniques, including clustering, neural networks, and deep learning.
+Beyond implementation, each activity contributed to developing a deeper understanding of model behaviour,
+limitations, and real-world applicability.
 </p>
 </section>
 
 <!-- UNIT 2 & 3 -->
 <section class="card">
-<h3>Unit 2 & 3: EDA and Regression</h3>
+<h3>Unit 2 & 3: Exploratory Data Analysis and Regression</h3>
 
 <p class="post-preview">
-Focused on data exploration, correlation analysis, and regression modelling using the Auto MPG dataset.
+This activity focused on understanding data structure, relationships between variables, and the application
+of regression models to identify patterns.
 </p>
 
 <details>
 <summary>View Full Activity</summary>
 
 <p>
-I performed exploratory data analysis including missing value handling, statistical analysis,
-and correlation assessment. A strong negative correlation between weight and MPG was identified.
-A regression model was implemented to model this relationship.
+I conducted exploratory data analysis (EDA) on the Auto MPG dataset, beginning with data cleaning and
+handling missing values. Statistical measures such as skewness and kurtosis were analysed to understand
+data distribution, which is critical before applying any machine learning model.
+</p>
+
+<p>
+A key outcome of this analysis was identifying a strong negative correlation between vehicle weight and fuel
+efficiency (MPG). This relationship was visualised using scatter plots and correlation heatmaps, helping to
+translate statistical findings into interpretable insights.
+</p>
+
+<p>
+A simple linear regression model was then implemented to quantify this relationship. While the model
+captured the overall trend, this activity highlighted an important limitation: relying on a single predictor
+reduces model accuracy. This reinforced the importance of feature selection and the need for more complex
+models in real-world scenarios.
 </p>
 
 <div class="evidence-box">
@@ -68,18 +84,30 @@ A regression model was implemented to model this relationship.
 
 <!-- UNIT 6 -->
 <section class="card">
-<h3>Unit 6: Clustering (K-Means)</h3>
+<h3>Unit 6: Clustering and Unsupervised Learning</h3>
 
 <p class="post-preview">
-Exploration of unsupervised learning using clustering techniques.
+This activity introduced unsupervised learning and the concept of discovering patterns without labelled data.
 </p>
 
 <details>
 <summary>View Full Activity</summary>
 
 <p>
-Data was standardised and clustered using K-Means. The elbow method was used to determine the optimal number of clusters.
-The silhouette score was used to evaluate clustering quality.
+Using the Iris dataset, I applied K-Means clustering to group data points based on similarity. Prior to clustering,
+data standardisation was performed to ensure that features contributed equally to the model.
+</p>
+
+<p>
+The elbow method was used to determine the optimal number of clusters, demonstrating how model selection in
+unsupervised learning relies on interpretation rather than predefined labels. The silhouette score was also
+used to evaluate cluster quality, providing insight into how well-separated the clusters were.
+</p>
+
+<p>
+This activity highlighted that clustering is not purely algorithmic but requires analytical judgment. It also
+demonstrated how unsupervised learning can be applied in real-world contexts such as customer segmentation,
+pattern recognition, and anomaly detection.
 </p>
 
 <div class="evidence-box">
@@ -94,18 +122,34 @@ The silhouette score was used to evaluate clustering quality.
 
 <!-- UNIT 7 -->
 <section class="card">
-<h3>Unit 7: Neural Networks (Perceptrons)</h3>
+<h3>Unit 7: Neural Networks – Perceptrons</h3>
 
 <p class="post-preview">
-Introduction to neural networks through perceptron-based implementations.
+This activity explored the foundations of neural networks through perceptron models.
 </p>
 
 <details>
 <summary>View Full Activity</summary>
 
 <p>
-Implemented a simple perceptron, AND logic gate, and multi-layer perceptron model.
-This demonstrated learning processes, weight updates, and non-linear problem solving.
+I implemented a simple perceptron model to understand how inputs, weights, and activation functions interact
+to produce outputs. This provided a fundamental understanding of how neural networks process information.
+</p>
+
+<p>
+The perceptron was then applied to model an AND logic gate, demonstrating supervised learning through weight
+adjustments based on prediction errors. This illustrated how models learn iteratively from data.
+</p>
+
+<p>
+Finally, a multi-layer perceptron (MLP) was implemented to solve non-linear problems such as XOR. This activity
+was particularly important because it showed the limitations of single-layer models and the necessity of deeper
+architectures for complex pattern recognition.
+</p>
+
+<p>
+Overall, this unit marked a transition from traditional machine learning approaches to neural network-based
+learning, forming the foundation for deep learning concepts explored later in the module.
 </p>
 
 <div class="evidence-box">
@@ -122,18 +166,29 @@ This demonstrated learning processes, weight updates, and non-linear problem sol
 
 <!-- UNIT 8 -->
 <section class="card">
-<h3>Unit 8: Gradient Descent & Cost Function</h3>
+<h3>Unit 8: Gradient Descent and Optimisation</h3>
 
 <p class="post-preview">
-Understanding optimisation using gradient descent.
+Understanding how machine learning models optimise performance using gradient descent.
 </p>
 
 <details>
 <summary>View Full Activity</summary>
 
 <p>
-This activity demonstrated how cost decreases over iterations when applying gradient descent.
-It highlighted the importance of learning rate and iteration count in reaching optimal solutions.
+This activity focused on gradient descent as a core optimisation algorithm used in machine learning. By iteratively
+adjusting model parameters, the algorithm reduces the cost function to improve model accuracy.
+</p>
+
+<p>
+Through experimentation, I observed how different learning rates affect convergence. A learning rate that is too
+high leads to instability, while a rate that is too low slows convergence. This demonstrated the importance of
+hyperparameter tuning in model performance.
+</p>
+
+<p>
+The decreasing cost over iterations visually reinforced how optimisation works in practice, bridging theoretical
+concepts with implementation.
 </p>
 
 <div class="evidence-box">
@@ -148,18 +203,29 @@ It highlighted the importance of learning rate and iteration count in reaching o
 
 <!-- UNIT 9 -->
 <section class="card">
-<h3>Unit 9: Convolutional Neural Networks (CNN)</h3>
+<h3>Unit 9: Deep Learning – Convolutional Neural Networks</h3>
 
 <p class="post-preview">
-Application of deep learning for image classification.
+Application of deep learning techniques to image classification tasks.
 </p>
 
 <details>
 <summary>View Full Activity</summary>
 
 <p>
-A CNN model was implemented using the CIFAR-10 dataset.
-This demonstrated feature extraction and classification of visual data.
+A convolutional neural network (CNN) was implemented using the CIFAR-10 dataset. This marked a significant
+progression from structured data analysis to unstructured data processing.
+</p>
+
+<p>
+CNNs automatically extract spatial features from images through convolutional layers, enabling the model
+to learn complex patterns such as shapes and textures. This contrasts with earlier models that required
+manual feature selection.
+</p>
+
+<p>
+This activity demonstrated the power of deep learning in real-world applications such as computer vision,
+autonomous systems, and medical imaging.
 </p>
 
 <div class="evidence-box">
@@ -177,15 +243,26 @@ This demonstrated feature extraction and classification of visual data.
 <h3>Unit 11: Model Performance Evaluation</h3>
 
 <p class="post-preview">
-Evaluation of model performance using classification metrics.
+Evaluating machine learning models using performance metrics.
 </p>
 
 <details>
 <summary>View Full Activity</summary>
 
 <p>
-Used confusion matrix and evaluation metrics such as accuracy, precision,
-recall, and F1-score to assess model performance.
+This activity focused on evaluating classification models using confusion matrices and derived metrics
+such as accuracy, precision, recall, and F1-score.
+</p>
+
+<p>
+While accuracy provides a general measure, this activity highlighted that it is not always sufficient,
+especially in imbalanced datasets. Precision and recall provide deeper insight into model performance,
+particularly in critical applications such as healthcare or fraud detection.
+</p>
+
+<p>
+This reinforced the importance of selecting appropriate evaluation metrics depending on the context
+and the potential impact of model errors.
 </p>
 
 <div class="evidence-box">
