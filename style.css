@@ -48,6 +48,7 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
@@ -67,7 +68,8 @@ main {
 }
 
 .card h2,
-.card h3 {
+.card h3,
+.card h4 {
     margin-top: 0;
     color: #3b342f;
 }
@@ -136,6 +138,7 @@ main {
     border-radius: 999px;
     font-size: 0.95rem;
     font-weight: 500;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
 .toc-links a:hover {
@@ -161,4 +164,48 @@ main {
 
 .section-anchor {
     scroll-margin-top: 120px;
+}
+
+details {
+    margin-top: 12px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #6b5e52;
+    margin-top: 10px;
+    transition: color 0.2s ease;
+}
+
+summary:hover {
+    color: #4d433b;
+}
+
+.post-preview {
+    margin-bottom: 12px;
+}
+
+.post-meta {
+    color: #6d665f;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.post-block {
+    margin-top: 18px;
+}
+
+.post-block h4 {
+    margin-bottom: 8px;
+    color: #4b433d;
+}
+
+.references-list {
+    padding-left: 20px;
+    margin-top: 12px;
+}
+
+.references-list li {
+    margin-bottom: 8px;
 }
