@@ -1,109 +1,53 @@
-body {
-    margin: 0;
-    font-family: "Segoe UI", Tahoma, sans-serif;
-    background-color: #f7f5f2;
-    color: #2c2c2c;
-    line-height: 1.7;
-}
-
-.container {
-    width: 90%;
-    max-width: 1050px;
-    margin: auto;
-}
-
-.site-header {
+.toc {
     background: #ffffff;
-    padding: 42px 0 24px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-
-.site-header h1 {
-    margin: 0;
-    font-size: 2rem;
-    color: #2f2a26;
-}
-
-.site-header p {
-    margin-top: 10px;
-    color: #666;
-    font-size: 1rem;
-}
-
-.navbar {
-    background-color: #ffffff;
-    border-bottom: 1px solid #eee;
-    padding: 15px 0;
-}
-
-.nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 18px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-
-.nav-links a:hover {
-    color: #8c7b6d;
-}
-
-main {
-    padding: 36px 0;
-}
-
-.card {
-    background-color: #ffffff;
-    padding: 28px;
-    margin-bottom: 24px;
+    padding: 20px 24px;
     border-radius: 14px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
 }
 
-.card h2, .card h3 {
+.toc h3 {
     margin-top: 0;
     color: #3b342f;
 }
 
-.card ul {
-    padding-left: 20px;
+.toc-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
-.evidence-box {
-    background: #f9f7f4;
-    border-left: 4px solid #b7a99a;
+.toc-links a {
+    text-decoration: none;
+    background: #f1ece6;
+    color: #4d433b;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.toc-links a:hover {
+    background: #e7ddd2;
+}
+
+.quote-box {
+    background: #fcfaf7;
+    border-left: 4px solid #c5b6a5;
     padding: 14px 16px;
-    margin-top: 16px;
+    margin: 16px 0;
     border-radius: 8px;
+    font-style: italic;
+    color: #4b433d;
 }
 
-.note {
-    color: #666;
-    font-size: 0.96rem;
-}
-
-.site-footer {
-    text-align: center;
-    padding: 20px 0 35px;
-    color: #888;
-    font-size: 0.9rem;
-}
-
-.page-intro {
-    font-size: 1.03rem;
-}
-
-.highlight {
-    color: #5f5348;
+.subtle-heading {
+    margin-bottom: 8px;
+    color: #5a5047;
+    font-size: 0.98rem;
     font-weight: 600;
 }
 
-.card strong {
-    color: #4d433b;
+.section-anchor {
+    scroll-margin-top: 120px;
 }
