@@ -236,4 +236,327 @@
             <strong>Evidence:</strong><br>
             <a href="evidence/Unit09%20Ex1%20Convolutional%20Neural%20Networks%20%28CNN%29%20-%20Object%20Recognition.ipynb%20-%20Colab.pdf" target="_blank">View Unit 9 CNN Evidence</a>
         </div>
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities | Machine Learning E-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <h1>Activities</h1>
+        <p>Practical Machine Learning Development</p>
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="container nav-links">
+        <a href="index.html">Home</a>
+        <a href="discussions.html">Discussions</a>
+        <a href="activities.html">Activities</a>
+        <a href="seminars.html">Seminars</a>
+        <a href="projects.html">Projects</a>
+        <a href="reflections.html">Reflections</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About</a>
+    </div>
+</nav>
+
+<main class="container">
+
+    <section class="card">
+        <h2>Overview</h2>
+        <p class="page-intro">
+            This section presents the practical machine learning activities completed throughout the module.
+            These activities demonstrate my progression from foundational data exploration and regression
+            to clustering, neural networks, deep learning, and model evaluation. More importantly, they
+            show how my understanding developed beyond implementation into interpretation, model limitations,
+            and real-world application.
+        </p>
+    </section>
+
+    <section class="toc">
+        <h3>On This Page</h3>
+        <div class="toc-links">
+            <a href="#unit23">Unit 2 & 3</a>
+            <a href="#unit4">Unit 4</a>
+            <a href="#unit6">Unit 6</a>
+            <a href="#unit7">Unit 7</a>
+            <a href="#unit8">Unit 8</a>
+            <a href="#unit9">Unit 9</a>
+            <a href="#unit11">Unit 11</a>
+            <a href="#activity-reflection">Reflection</a>
+        </div>
+    </section>
+
+    <section class="card section-anchor" id="unit23">
+        <h3>Unit 2 & 3: Exploratory Data Analysis and Regression</h3>
+
+        <p>
+            I conducted exploratory data analysis (EDA) on the Auto MPG dataset, beginning with data cleaning
+            and handling missing values. Statistical measures such as skewness and kurtosis were analysed to
+            understand data distribution, which is critical before applying any machine learning model.
+        </p>
+
+        <p>
+            A key outcome of this analysis was identifying a strong negative correlation between vehicle weight
+            and fuel efficiency (MPG). This relationship was visualised using scatter plots and correlation
+            heatmaps, helping to translate statistical findings into interpretable insights. The uploaded evidence
+            shows the missing-value check, skewness and kurtosis output, a correlation heatmap, a scatter plot,
+            covariance and Pearson correlation, and simple linear regression output.
+        </p>
+
+        <p>
+            A simple linear regression model was then implemented to quantify this relationship. While the model
+            captured the overall trend, this activity highlighted an important limitation: relying on a single
+            predictor reduces model accuracy. This reinforced the importance of feature selection and the need
+            for more complex models in real-world scenarios. The notebook evidence explicitly reports a Pearson
+            correlation of about -0.83 between weight and MPG, supporting this interpretation.
+        </p>
+
+        <div class="evidence-box">
+            <strong>Evidence:</strong><br>
+            <a href="evidence/unit2%263.ipynb%20-%20Colab.pdf" target="_blank">View Unit 2 &amp; 3 EDA and Regression Evidence</a>
+        </div>
+    </section>
+
+    <section class="card section-anchor" id="unit4">
+        <h3>Unit 4: Linear Regression with Scikit-Learn</h3>
+
+        <p>
+            In Unit 4, I extended my understanding of regression by working with larger-scale data on population
+            and GDP. This activity moved beyond simple feature-level relationships and introduced the challenge of
+            modelling real-world macro-level data where multiple factors influence the outcome.
+        </p>
+
+        <p>
+            The analysis involved merging datasets, calculating mean population and mean GDP, measuring correlation,
+            and then fitting a linear regression model. The uploaded output shows a Pearson correlation of
+            approximately 0.72, suggesting a moderately strong positive relationship, but it also shows that the
+            regression model explained only part of the variation, with an R² of about 0.52 and relatively large
+            error values. This was important because it demonstrated that visible correlation does not automatically
+            imply that a single-variable model is sufficient for accurate prediction.
+        </p>
+
+        <p>
+            This activity strengthened my ability to interpret model output critically rather than assuming that
+            regression itself guarantees strong predictive power. It also reinforced a wider lesson from the module:
+            performance depends not only on the algorithm, but also on the completeness and suitability of the data.
+        </p>
+
+        <div class="evidence-box">
+            <strong>Evidence:</strong><br>
+            <a href="evidence/unit4.ipynb%20-%20Colab.pdf" target="_blank">View Unit 4 Regression Evidence</a>
+        </div>
+    </section>
+
+    <section class="card section-anchor" id="unit6">
+        <h3>Unit 6: Clustering and Unsupervised Learning</h3>
+
+        <p>
+            This activity introduced unsupervised learning through K-Means clustering using the Iris dataset.
+            Unlike regression, clustering does not rely on labelled outputs. Instead, it identifies patterns in
+            the data based on similarity, which makes it useful for exploratory analysis and segmentation.
+        </p>
+
+        <p>
+            Before applying K-Means, the dataset was standardised so that all features contributed equally to the
+            model. The elbow method was then used to determine an appropriate number of clusters, and the resulting
+            clustering was evaluated using the silhouette score. The evidence shows the elbow plot, the cluster
+            visualisation, and the silhouette score output, making it possible to see both the modelling process
+            and its evaluation.
+        </p>
+
+        <p>
+            This activity helped me understand that clustering is not simply about running an algorithm. It also
+            requires interpretation, judgement, and awareness of how preprocessing decisions affect the final result.
+            It strengthened my understanding of how unsupervised learning can be applied in practical contexts such
+            as segmentation, pattern discovery, and anomaly detection.
+        </p>
+
+        <div class="evidence-box">
+            <strong>Evidence:</strong><br>
+            <a href="evidence/unit6.ipynb%20-%20Colab.pdf" target="_blank">View Unit 6 Clustering Evidence</a>
+        </div>
+    </section>
+
+    <section class="card section-anchor" id="unit7">
+        <h3>Unit 7: Neural Networks – Perceptron Activities</h3>
+
+        <p>
+            Unit 7 marked an important transition from classical machine learning techniques toward neural
+            networks. Through the perceptron activities, I explored how weighted inputs, activation functions,
+            and iterative updates allow a model to learn from data.
+        </p>
+
+        <p>
+            The first activity implemented a simple perceptron using NumPy and showed how changing the weights
+            changed the final output. The second activity used a perceptron to model the AND operator, helping
+            me understand supervised learning through weight updates and error correction. The third activity
+            introduced a multi-layer perceptron with sigmoid activation, extending the model beyond linear
+            separability and showing why hidden layers are necessary for more complex problems such as XOR.
+            The evidence files document these three stages clearly.
+        </p>
+
+        <p>
+            This sequence of activities was especially valuable because it made neural network learning more
+            concrete. Rather than treating neural networks as black boxes, I was able to see how outputs are
+            produced, how error is reduced, and how network complexity changes the kinds of problems that can
+            be solved.
+        </p>
+
+        <div class="evidence-box">
+            <strong>Evidence:</strong><br>
+            <a href="evidence/Unit07%20Ex1%20simple_perceptron.ipynb%20-%20Colab.pdf" target="_blank">View Unit 7 Exercise 1: Simple Perceptron</a><br>
+            <a href="evidence/Unit07%20Ex2%20perceptron_AND_operator.ipynb%20-%20Colab.pdf" target="_blank">View Unit 7 Exercise 2: AND Operator</a><br>
+            <a href="evidence/Unit07%20Ex3%20multi-layer%20Perceptron.ipynb%20-%20Colab.pdf" target="_blank">View Unit 7 Exercise 3: Multi-layer Perceptron</a>
+        </div>
+    </section>
+
+    <section class="card section-anchor" id="unit8">
+        <h3>Unit 8: Gradient Descent and Optimisation</h3>
+
+        <p>
+            In Unit 8, I focused on gradient descent as a core optimisation technique used in machine learning.
+            This activity demonstrated how model parameters are updated iteratively in order to reduce the cost
+            function and improve performance.
+        </p>
+
+        <p>
+            The notebook shows repeated iterations in which the values of <em>m</em>, <em>b</em>, and the cost
+            function are updated over time, with the cost steadily decreasing as the model improves. It also
+            highlights the relationship between learning rate, number of iterations, and convergence, including
+            the important warning that very large learning rates can miss the global minimum. This made the
+            optimisation process much more intuitive and helped connect mathematical theory to actual model
+            behaviour.
+        </p>
+
+        <p>
+            This activity was particularly useful because it made clear that training performance depends not only
+            on the model structure, but also on how the optimisation process is configured. That insight becomes
+            increasingly important in neural networks and deep learning.
+        </p>
+
+        <div class="evidence-box">
+            <strong>Evidence:</strong><br>
+            <a href="evidence/Unit08%20Ex4%20gradient_descent_cost_function.ipynb%20-%20Colab.pdf" target="_blank">View Unit 8 Gradient Descent Evidence</a>
+        </div>
+    </section>
+
+    <section class="card section-anchor" id="unit9">
+        <h3>Unit 9: Convolutional Neural Networks (CNNs)</h3>
+
+        <p>
+            Unit 9 introduced convolutional neural networks through an object recognition activity using the
+            CIFAR-10 dataset. This was a major step forward from structured tabular data into image-based deep
+            learning, where the model learns visual features directly from data.
+        </p>
+
+        <p>
+            The notebook evidence shows the loading of CIFAR-10, the shape of the dataset, image visualisation,
+            label inspection, normalisation of image values, categorical encoding, and the creation of validation
+            and training sets. This demonstrates the full preprocessing workflow needed before model training and
+            helps explain why deep learning pipelines require careful preparation rather than simply fitting a model.
+        </p>
+
+        <p>
+            This activity strengthened my understanding of how CNNs differ from earlier models. Instead of relying
+            on manually engineered features, CNNs learn spatial representations automatically, which makes them
+            especially powerful for computer vision tasks. It also prepared me well for the more advanced individual
+            deep learning work developed later in the module.
+        </p>
+
+        <div class="evidence-box">
+            <strong>Evidence:</strong><br>
+            <a href="evidence/Unit09%20Ex1%20Convolutional%20Neural%20Networks%20%28CNN%29%20-%20Object%20Recognition.ipynb%20-%20Colab.pdf" target="_blank">View Unit 9 CNN Evidence</a>
+        </div>
+    </section>
+
+    <section class="card section-anchor" id="unit11">
+        <h3>Unit 11: Model Performance Evaluation</h3>
+
+        <p>
+            This activity focused on evaluating machine learning models using confusion matrices and performance
+            metrics. It reinforced an essential lesson from the module: model quality cannot be judged through
+            accuracy alone.
+        </p>
+
+        <p>
+            The uploaded evidence includes confusion matrix outputs as well as measures such as F1-score, accuracy,
+            precision, and recall. Seeing these metrics together made it easier to understand how different
+            evaluation measures highlight different strengths and weaknesses of a model. For example, a model may
+            appear acceptable on accuracy while performing poorly on recall or precision in more critical contexts.
+        </p>
+
+        <p>
+            This activity improved my ability to interpret evaluation outputs critically and helped me appreciate
+            why model assessment must always be matched to the context of use. In high-stakes applications, the
+            choice of metric is itself an important professional decision.
+        </p>
+
+        <div class="evidence-box">
+            <strong>Evidence:</strong><br>
+            <a href="evidence/Unit11_model_Performance_Measurement.ipynb%20-%20Colab.pdf" target="_blank">View Unit 11 Evaluation Evidence</a>
+        </div>
+    </section>
+
+    <section class="card section-anchor" id="activity-reflection">
+        <h3>Reflection on Activity-Based Learning</h3>
+
+        <p>
+            The practical activities across this module were essential in helping me move from theoretical
+            understanding to applied machine learning practice. They allowed me to work directly with data,
+            implement models, interpret outputs, and recognise that successful machine learning depends on much
+            more than simply running code.
+        </p>
+
+        <p>
+            One of the most important lessons I developed through these activities was the importance of data
+            understanding. In the early activities, exploratory data analysis and regression showed me that
+            model behaviour is shaped by the quality, distribution, and relevance of the data being used.
+            Later activities in clustering, neural networks, and deep learning reinforced that preprocessing,
+            parameter choices, and evaluation methods all significantly influence the reliability of results.
+        </p>
+
+        <p>
+            These activities also changed how I think about machine learning professionally. Rather than seeing
+            models only as technical tools, I began to understand them as systems that must be interpreted,
+            evaluated, and applied responsibly. This was particularly meaningful in relation to my interest in
+            healthcare and high-risk environments, where performance, robustness, and safe decision-support are
+            more important than achieving impressive outputs in isolation.
+        </p>
+
+        <p>
+            Overall, the activity-based structure of the module helped me build confidence step by step. It
+            strengthened both my technical ability and my critical judgement, which will be important in future
+            academic work and in any real-world application of machine learning.
+        </p>
+    </section>
+
+    <section class="card">
+        <h3>References</h3>
+        <ul class="references-list">
+            <li>Keras documentation and CIFAR-10 dataset resources.</li>
+            <li>NumPy documentation.</li>
+            <li>Scikit-learn documentation for regression, clustering, and evaluation metrics.</li>
+            <li>TensorFlow and Keras resources for CNN implementation.</li>
+            <li>UCI and standard teaching datasets used in the module activities.</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 Naeema Alnaqbi | Machine Learning E-Portfolio</p>
+    </div>
+</footer>
+
+</body>
+</html>
    
