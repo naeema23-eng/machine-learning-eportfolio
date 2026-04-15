@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title | Machine Learning E-Portfolio</title>
+    <title>Projects | Machine Learning E-Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-header">
     <div class="container">
-        <h1>Machine Learning E-Portfolio</h1>
-        <p>Naeema Alnaqbi | MSc Artificial Intelligence | University of Essex Online</p>
+        <h1>Projects</h1>
+        <p>Major Assessed Work in Units 6 and 11</p>
     </div>
 </header>
 
@@ -29,17 +29,180 @@
 </nav>
 
 <main class="container">
+
     <section class="card">
-        <h2>Page under construction</h2>
-        <p>This section will be developed as part of the Machine Learning e-portfolio build.</p>
+        <h2>Overview</h2>
+        <p class="page-intro">
+            This page presents the two major assessed projects completed during the module:
+            the Unit 6 development team project and the Unit 11 individual deep learning project.
+            Together, these projects demonstrate my progression from applying classical machine
+            learning methods within a collaborative setting to independently designing, training,
+            evaluating, and critically comparing more advanced deep learning models.
+        </p>
     </section>
-</main>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>© 2026 Naeema Alnaqbi | Machine Learning E-Portfolio</p>
-    </div>
-</footer>
+    <section class="toc">
+        <h3>On This Page</h3>
+        <div class="toc-links">
+            <a href="#unit6-project">Unit 6 Team Project</a>
+            <a href="#unit11-project">Unit 11 Individual Project</a>
+            <a href="#comparison">Critical Comparison</a>
+            <a href="#project-reflection">Project Reflection</a>
+        </div>
+    </section>
 
-</body>
-</html>
+    <section class="card section-anchor" id="unit6-project">
+        <h2>Unit 6: Development Team Project – Airbnb Business Analysis</h2>
+
+        <p>
+            The Unit 6 project focused on analysing the Airbnb NYC 2019 dataset using classical machine
+            learning methods within a team environment. The project addressed a real-world business problem
+            by combining regression and clustering to support pricing analysis and market segmentation.
+            This was my main collaborative project in the module and marked an important transition from
+            smaller technical activities to a more integrated analytical task.
+        </p>
+
+        <h3>Business Question</h3>
+        <p>
+            The team agreed on the following business question:
+            <em>How can Airbnb optimise pricing strategies in NYC by predicting listing prices using property
+            features and identifying distinct neighbourhood market segments?</em>
+            This question was strategically relevant because pricing strongly influences occupancy, host revenue,
+            and market competitiveness in a platform environment.
+        </p>
+
+        <h3>My Role and Contribution</h3>
+        <p>
+            In this project, I took the role of <strong>Project Lead and Technical Lead</strong>. I was responsible
+            for data preprocessing, modelling, clustering, visualisations, and final report integration.
+            This meant that I was not only involved in implementing the technical workflow, but also in ensuring
+            that the final report remained coherent, analytical, and aligned with the marking criteria.
+        </p>
+
+        <p>
+            The meeting minutes and team contract confirm this role allocation clearly. They show that I led
+            modelling, clustering, visualisation planning, and final integration, while also coordinating deadlines
+            and maintaining accountability across the team. This role required both technical expertise and
+            collaborative leadership.
+        </p>
+
+        <h3>Methodology and Analysis</h3>
+        <p>
+            The analysis followed a structured workflow. Irrelevant variables such as IDs and names were removed,
+            missing values were handled, categorical variables were one-hot encoded, and numerical variables were
+            standardised where appropriate. The data was split into training and testing subsets using a fixed
+            random state to preserve reproducibility.
+        </p>
+
+        <p>
+            For regression, the project compared Linear Regression, Ridge Regression, and Random Forest.
+            The notebook evidence shows that baseline linear models performed weakly on raw price, while
+            log transformation improved stability. The final report highlights that the Random Forest Regressor
+            achieved the strongest predictive performance at around <strong>R² ≈ 0.61</strong>, suggesting that
+            Airbnb pricing reflects complex non-linear interactions rather than simple linear relationships.
+        </p>
+
+        <p>
+            For clustering, K-Means was used to identify market segments. The Elbow Method indicated that
+            <strong>K = 4</strong> offered a good balance between interpretability and segmentation detail.
+            This allowed the team to profile distinct listing groups and connect model outputs to business
+            implications rather than treating clustering as an abstract algorithmic exercise.
+        </p>
+
+        <h3>Key Learning and Significance</h3>
+        <p>
+            This project strengthened my understanding of classical machine learning workflows, especially
+            the importance of feature engineering, preprocessing, and careful interpretation of results.
+            It also showed that model performance depends heavily on data quality and feature representation.
+            Another key learning point was that teamwork in technical projects requires more than dividing tasks:
+            it also requires consistency, coordination, and active integration to produce a strong final result.
+        </p>
+
+        <div class="evidence-box">
+            <strong>Evidence:</strong><br>
+            <a href="evidence/Airbnb_ML_Track1_Final_TeamB.ipynb%20-%20Colab.pdf" target="_blank">View Unit 6 Team Notebook</a><br>
+            <a href="evidence/Development%20Team%20Project-%20Project%20Report.pdf" target="_blank">View Unit 6 Project Report</a><br>
+            <a href="evidence/Minutes%20Of%20Meeting.docx" target="_blank">View Minutes of Meeting</a><br>
+            <a href="evidence/Team%20Contract%20.docx" target="_blank">View Team Contract</a>
+        </div>
+    </section>
+
+    <section class="card section-anchor" id="unit11-project">
+        <h2>Unit 11: Individual Project – Neural Network Models for Object Recognition Using CIFAR-10</h2>
+
+        <p>
+            In Unit 11, I independently developed and evaluated deep learning models for object recognition
+            using the CIFAR-10 dataset. This project focused on comparing a custom Convolutional Neural Network
+            (CNN) with a transfer learning model based on MobileNetV2. It required a more advanced level of
+            experimentation than earlier work because it involved model design, validation strategy, data
+            augmentation, and critical interpretation of results.
+        </p>
+
+        <h3>Project Aim</h3>
+        <p>
+            The aim of the project was not only to compare which model performed better, but to understand
+            why those performance differences emerged. This made the project analytical rather than purely
+            descriptive, with attention to how architecture, dataset constraints, and training strategy interact.
+        </p>
+
+        <h3>My Individual Contribution</h3>
+        <p>
+            This was a fully independent project, and I was responsible for the entire machine learning pipeline.
+            My work included dataset loading and splitting, preprocessing through normalisation and one-hot
+            encoding, implementation of data augmentation, design of the custom CNN architecture, implementation
+            of transfer learning using MobileNetV2, model training, validation monitoring, optimisation,
+            confusion matrix analysis, classification reporting, and preparation of the final presentation.
+        </p>
+
+        <p>
+            I also prepared the presentation slides and explanatory material, which required me to communicate
+            not only what the models achieved, but also the reasons behind model behaviour, limitations, and
+            practical significance.
+        </p>
+
+        <h3>Methodology and Results</h3>
+        <p>
+            The project used CIFAR-10, consisting of 60,000 colour images across 10 classes. The dataset
+            was split into 40,000 training images, 10,000 validation images, and 10,000 test images.
+            Images were normalised to the 0–1 range and labels were one-hot encoded. Data augmentation was
+            applied through rotation, horizontal flipping, and width/height shifts to improve generalisation.
+        </p>
+
+        <p>
+            The custom CNN architecture included stacked convolutional layers, batch normalisation, max pooling,
+            dropout, and dense layers. Training was controlled through early stopping and learning-rate reduction.
+            The uploaded notebook shows that the custom CNN achieved a test accuracy of about
+            <strong>0.8032</strong>, with the best validation performance reaching around <strong>80%</strong>.
+        </p>
+
+        <p>
+            The transfer learning model used MobileNetV2 with resized 96×96 inputs and a frozen pretrained base.
+            According to my project notes and presentation materials, this approach performed slightly better,
+            reaching roughly <strong>81–82%</strong> accuracy. However, the performance gain was modest rather
+            than dramatic.
+        </p>
+
+        <h3>Critical Interpretation</h3>
+        <p>
+            A key insight from this project was that increasing model complexity does not automatically produce
+            a proportionally better result. Although MobileNetV2 slightly outperformed the custom CNN, the
+            improvement was limited. This suggested that the main limitation was not architecture alone, but
+            the characteristics of the dataset itself, especially the low 32×32 image resolution and the visual
+            similarity between several classes.
+        </p>
+
+        <p>
+            The confusion matrix and classification outputs revealed consistent misclassification between
+            visually similar classes, especially <strong>cat vs dog</strong> and <strong>bird vs frog</strong>.
+            This showed that deep learning performance is strongly constrained by data quality and feature
+            separability. Data augmentation improved robustness, but it did not resolve deeper semantic
+            ambiguity between classes.
+        </p>
+
+        <p>
+            Another important lesson was the role of validation. Validation curves made it possible to identify
+            where performance began to plateau, which helped prevent overfitting and reinforced the importance
+            of separating training, validation, and testing for trustworthy evaluation.
+        </p>
+
+        <div class="
