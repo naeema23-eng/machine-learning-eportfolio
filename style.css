@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Segoe UI", Tahoma, sans-serif;
@@ -102,11 +106,14 @@ main {
     border-radius: 14px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 24px;
+    border: 1px solid #eee7df;
 }
 
 .toc h3 {
     margin-top: 0;
+    margin-bottom: 14px;
     color: #3b342f;
+    font-size: 1.15rem;
 }
 
 .toc-links {
@@ -123,11 +130,62 @@ main {
     border-radius: 999px;
     font-size: 0.95rem;
     font-weight: 500;
-    transition: background 0.2s ease, color 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    border: 1px solid transparent;
 }
 
 .toc-links a:hover {
     background: #e7ddd2;
+    color: #3b342f;
+    transform: translateY(-1px);
+}
+
+.toc-links a:focus {
+    outline: none;
+    border: 1px solid #b7a99a;
+}
+
+.mini-toc {
+    background: #fcfaf7;
+    border: 1px solid #ece3d8;
+    padding: 16px 18px;
+    border-radius: 12px;
+    margin: 20px 0 24px;
+}
+
+.mini-toc-title {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #5a5047;
+}
+
+.mini-toc-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mini-toc-links a {
+    text-decoration: none;
+    color: #6b5e52;
+    background: #f3ede6;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.mini-toc-links a:hover {
+    background: #e7ddd2;
+    color: #3b342f;
+    transform: translateY(-1px);
+}
+
+.mini-toc-links a:focus {
+    outline: none;
+    border: 1px solid #b7a99a;
 }
 
 .quote-box {
@@ -163,6 +221,7 @@ main {
 
 .post-block {
     margin-top: 18px;
+    scroll-margin-top: 120px;
 }
 
 .references-list {
@@ -215,4 +274,38 @@ summary:hover {
     padding: 20px 0 35px;
     color: #888;
     font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        padding: 34px 0 20px;
+    }
+
+    .site-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .site-header p {
+        font-size: 0.95rem;
+    }
+
+    .card,
+    .toc {
+        padding: 22px 18px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .toc-links,
+    .mini-toc-links {
+        gap: 8px;
+    }
+
+    .toc-links a,
+    .mini-toc-links a {
+        font-size: 0.88rem;
+        padding: 7px 11px;
+    }
 }
